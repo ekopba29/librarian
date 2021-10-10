@@ -48,6 +48,22 @@
         <li class="nav-item m-3" v-show="role">
           <button class="btn btn-info" @click="logout">Logout</button>
         </li>
+        <li class="nav-item m-3" v-if="!role">
+          <router-link :to="{ name: 'register' }">
+            <button
+              class="btn btn-info"
+            >
+              Register
+            </button>
+          </router-link>
+          <router-link :to="{ name: 'login' }">
+          <button
+            class="btn btn-info"
+          >
+            Login
+          </button>
+          </router-link>
+        </li>
       </ul>
     </div>
   </nav>
@@ -67,8 +83,8 @@ export default {
   },
   watch: {
     $route(to, from) {
-      if(from.name == 'login'){
-        this.role = authHelper.getRole()
+      if (from.name == "login") {
+        this.role = authHelper.getRole();
       }
     },
   },

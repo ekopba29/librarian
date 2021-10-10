@@ -3341,6 +3341,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "NavbarUser",
@@ -3354,7 +3370,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   watch: {
     $route: function $route(to, from) {
-      if (from.name == 'login') {
+      if (from.name == "login") {
         this.role = _helper_authHelper__WEBPACK_IMPORTED_MODULE_0__.getRole();
       }
     }
@@ -42088,7 +42104,28 @@ var render = function() {
                   [_vm._v("Logout")]
                 )
               ]
-            )
+            ),
+            _vm._v(" "),
+            !_vm.role
+              ? _c(
+                  "li",
+                  { staticClass: "nav-item m-3" },
+                  [
+                    _c("router-link", { attrs: { to: { name: "register" } } }, [
+                      _c("button", { staticClass: "btn btn-info" }, [
+                        _vm._v("\n            Register\n          ")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("router-link", { attrs: { to: { name: "login" } } }, [
+                      _c("button", { staticClass: "btn btn-info" }, [
+                        _vm._v("\n          Login\n        ")
+                      ])
+                    ])
+                  ],
+                  1
+                )
+              : _vm._e()
           ])
         ]
       )
