@@ -1,0 +1,10 @@
+export const doApprove = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/borrows/##idBorrow##/approve';
+export const doBorrowed = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/borrows/##idBorrow##/borrowed';
+export const doReturned = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/borrows/##idBorrow##/returned';
+export const getBorrowRequest = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/borrows/request';
+export const getBorrowApproved = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/borrows/approved';
+export const getBorrowed = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/borrows/borrowed';
+export const getBooks = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/books';
+export const createBooks = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/books';
+export const updateBooks = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/books/##idBook##';
+export const getBook = process.env.MIX_VUE_BASE_API_LIBRARY + 'insider/books/##idBook##';
